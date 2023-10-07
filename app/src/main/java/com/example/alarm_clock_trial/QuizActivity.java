@@ -103,8 +103,8 @@ public class QuizActivity extends AppCompatActivity {
         ArrayList list = new ArrayList();
         String str = "";
         try {
-
-            InputStream inputStream = getAssets().open(category + ".txt"); //get the category name (package name)
+            //get the category name (package name) and read file 
+            InputStream inputStream = getAssets().open(category + ".txt");
             int size = inputStream.available();
             byte[] buffer = new byte[size];
             inputStream.read(buffer);
