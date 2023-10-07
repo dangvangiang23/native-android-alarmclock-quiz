@@ -104,7 +104,7 @@ public class QuizActivity extends AppCompatActivity {
         String str = "";
         try {
 
-            InputStream inputStream = getAssets().open(category + ".txt");
+            InputStream inputStream = getAssets().open(category + ".txt"); //get the category name (package name)
             int size = inputStream.available();
             byte[] buffer = new byte[size];
             inputStream.read(buffer);
